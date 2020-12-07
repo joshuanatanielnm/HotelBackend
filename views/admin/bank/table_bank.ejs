@@ -1,6 +1,6 @@
 <!-- DataTales Example -->
-<div class="card shadow mb-4">
-  <div class="card-header py-3">
+<div class="mb-4 shadow card">
+  <div class="py-3 card-header">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-modal">
       <i class="fas fa-plus"></i>
     </button>
@@ -26,7 +26,7 @@
             <td><%= bank[i].nomorRekening %></td>
             <td><%= bank[i].name %></td>
             <td>
-              <img src="https://admin-staycation.herokuapp.com/<%= bank[i].imageUrl %>" alt="imageUrl" width="70px">
+              <img src="https://admin-hotelbooking.herokuapp.com/<%= bank[i].imageUrl %>" alt="imageUrl" width="70px">
             </td>
             <td>
               <form action="/admin/bank/<%= bank[i].id %>?_method=DELETE" method="POST">
